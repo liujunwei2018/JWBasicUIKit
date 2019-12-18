@@ -1,0 +1,73 @@
+PODS:
+  - JWBasicUIKit (0.1.0):
+    - JWBasicUIKit/AlertView (= 0.1.0)
+    - JWBasicUIKit/UIButton (= 0.1.0)
+    - JWBasicUIKit/UIColor (= 0.1.0)
+    - JWBasicUIKit/UIFont (= 0.1.0)
+    - JWBasicUIKit/UIImage (= 0.1.0)
+    - JWBasicUIKit/UILabel (= 0.1.0)
+    - JWBasicUIKit/UIScrollView (= 0.1.0)
+    - JWBasicUIKit/UITextfield (= 0.1.0)
+    - JWBasicUIKit/UITextView (= 0.1.0)
+    - JWBasicUIKit/UIView (= 0.1.0)
+    - Masonry
+    - SDWebImage
+  - JWBasicUIKit/AlertView (0.1.0):
+    - JWBasicUIKit/UIColor
+    - JWBasicUIKit/UIFont
+    - JWBasicUIKit/UIImage
+    - Masonry
+    - SDWebImage
+  - JWBasicUIKit/UIButton (0.1.0):
+    - Masonry
+    - SDWebImage
+  - JWBasicUIKit/UIColor (0.1.0):
+    - Masonry
+    - SDWebImage
+  - JWBasicUIKit/UIFont (0.1.0):
+    - Masonry
+    - SDWebImage
+  - JWBasicUIKit/UIImage (0.1.0):
+    - Masonry
+    - SDWebImage
+  - JWBasicUIKit/UILabel (0.1.0):
+    - Masonry
+    - SDWebImage
+  - JWBasicUIKit/UIScrollView (0.1.0):
+    - JWBasicUIKit/UIView
+    - Masonry
+    - SDWebImage
+  - JWBasicUIKit/UITextfield (0.1.0):
+    - Masonry
+    - SDWebImage
+  - JWBasicUIKit/UITextView (0.1.0):
+    - Masonry
+    - SDWebImage
+  - JWBasicUIKit/UIView (0.1.0):
+    - Masonry
+    - SDWebImage
+  - Masonry (1.1.0)
+  - SDWebImage (5.4.0):
+    - SDWebImage/Core (= 5.4.0)
+  - SDWebImage/Core (5.4.0)
+
+DEPENDENCIES:
+  - JWBasicUIKit (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - Masonry
+    - SDWebImage
+
+EXTERNAL SOURCES:
+  JWBasicUIKit:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  JWBasicUIKit: c2152b43dd5a434843dee050bc7391a13009e28d
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  SDWebImage: 5bf6aec6481ae2a062bdc59f9d6c1d1e552090e0
+
+PODFILE CHECKSUM: b2adf3514921bd906fc7ea7df46783c205afc908
+
+COCOAPODS: 1.8.4

@@ -1,0 +1,6 @@
+framework module Pods_JWBasicUIKit_Example {
+  umbrella header "Pods-JWBasicUIKit_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

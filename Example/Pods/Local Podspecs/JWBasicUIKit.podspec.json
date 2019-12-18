@@ -1,0 +1,99 @@
+{
+  "name": "JWBasicUIKit",
+  "version": "0.1.0",
+  "summary": "A short description of JWBasicUIKit.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/liujunwei2018/JWBasicUIKit",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "liujunwei2018": "liujunwei0422@icloud.com"
+  },
+  "source": {
+    "git": "https://github.com/liujunwei2018/JWBasicUIKit.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "public_header_files": "JWBasicUIKit/Classes/JWBasicUIKit.h",
+  "source_files": "JWBasicUIKit/Classes/JWBasicUIKit.h",
+  "dependencies": {
+    "SDWebImage": [
+
+    ],
+    "Masonry": [
+
+    ]
+  },
+  "subspecs": [
+    {
+      "name": "UIView",
+      "source_files": "JWBasicUIKit/Classes/UIView/**/*.{h,m}",
+      "public_header_files": "JWBasicUIKit/Classes/UIView/**/*.h"
+    },
+    {
+      "name": "UIButton",
+      "source_files": "JWBasicUIKit/Classes/UIButton/**/*.{h,m}",
+      "public_header_files": "JWBasicUIKit/Classes/UIButton/**/*.h"
+    },
+    {
+      "name": "UILabel",
+      "source_files": "JWBasicUIKit/Classes/UILabel/**/*.{h,m}",
+      "public_header_files": "JWBasicUIKit/Classes/UILabel/**/*.h"
+    },
+    {
+      "name": "UIColor",
+      "source_files": "JWBasicUIKit/Classes/UIColor/**/*.{h,m}",
+      "public_header_files": "JWBasicUIKit/Classes/UIColor/**/*.h"
+    },
+    {
+      "name": "UIImage",
+      "source_files": "JWBasicUIKit/Classes/UIImage/**/*.{h,m}",
+      "public_header_files": "JWBasicUIKit/Classes/UIImage/**/*.h"
+    },
+    {
+      "name": "UIFont",
+      "source_files": "JWBasicUIKit/Classes/UIFont/**/*.{h,m}",
+      "public_header_files": "JWBasicUIKit/Classes/UIFont/**/*.h"
+    },
+    {
+      "name": "UIScrollView",
+      "source_files": "JWBasicUIKit/Classes/UIScrollView/**/*.{h,m}",
+      "public_header_files": "JWBasicUIKit/Classes/UIScrollView/**/*.h",
+      "dependencies": {
+        "JWBasicUIKit/UIView": [
+
+        ]
+      }
+    },
+    {
+      "name": "UITextfield",
+      "source_files": "JWBasicUIKit/Classes/UITextfield/**/*.{h,m}",
+      "public_header_files": "JWBasicUIKit/Classes/UITextfield/**/*.h"
+    },
+    {
+      "name": "UITextView",
+      "source_files": "JWBasicUIKit/Classes/UITextView/**/*.{h,m}",
+      "public_header_files": "JWBasicUIKit/Classes/UITextView/**/*.h"
+    },
+    {
+      "name": "AlertView",
+      "source_files": "JWBasicUIKit/Classes/AlertView/**/*.{h,m}",
+      "public_header_files": "JWBasicUIKit/Classes/AlertView/**/*.h",
+      "dependencies": {
+        "JWBasicUIKit/UIImage": [
+
+        ],
+        "JWBasicUIKit/UIColor": [
+
+        ],
+        "JWBasicUIKit/UIFont": [
+
+        ]
+      }
+    }
+  ]
+}

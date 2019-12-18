@@ -30,13 +30,55 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'JWBasicUIKit/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'JWBasicUIKit' => ['JWBasicUIKit/Assets/*.png']
-  # }
+  s.subspec 'UIView' do |uIView|
+    uIView.source_files = 'JWBasicUIKit/Classes/UIView/**/*.{h,m}'
+    uIView.public_header_files = 'JWBasicUIKit/Classes/UIView/**/*.h'
+  end
+  s.subspec 'UIButton' do |uIButton|
+    uIButton.source_files = 'JWBasicUIKit/Classes/UIButton/**/*.{h,m}'
+    uIButton.public_header_files = 'JWBasicUIKit/Classes/UIButton/**/*.h'
+  end
+  s.subspec 'UILabel' do |uILabel|
+    uILabel.source_files = 'JWBasicUIKit/Classes/UILabel/**/*.{h,m}'
+    uILabel.public_header_files = 'JWBasicUIKit/Classes/UILabel/**/*.h'
+  end
+  s.subspec 'UIColor' do |uIColor|
+    uIColor.source_files = 'JWBasicUIKit/Classes/UIColor/**/*.{h,m}'
+    uIColor.public_header_files = 'JWBasicUIKit/Classes/UIColor/**/*.h'
+  end
+  s.subspec 'UIImage' do |uIImage|
+    uIImage.source_files = 'JWBasicUIKit/Classes/UIImage/**/*.{h,m}'
+    uIImage.public_header_files = 'JWBasicUIKit/Classes/UIImage/**/*.h'
+  end
+  s.subspec 'UIFont' do |uIFont|
+    uIFont.source_files = 'JWBasicUIKit/Classes/UIFont/**/*.{h,m}'
+    uIFont.public_header_files = 'JWBasicUIKit/Classes/UIFont/**/*.h'
+  end
+  s.subspec 'UIScrollView' do |uIScrollView|
+    uIScrollView.source_files = 'JWBasicUIKit/Classes/UIScrollView/**/*.{h,m}'
+    uIScrollView.public_header_files = 'JWBasicUIKit/Classes/UIScrollView/**/*.h'
+    uIScrollView.dependency 'JWBasicUIKit/UIView'
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  end
+  s.subspec 'UITextfield' do |uITextfield|
+    uITextfield.source_files = 'JWBasicUIKit/Classes/UITextfield/**/*.{h,m}'
+    uITextfield.public_header_files = 'JWBasicUIKit/Classes/UITextfield/**/*.h'
+  end
+  s.subspec 'UITextView' do |uITextView|
+    uITextView.source_files = 'JWBasicUIKit/Classes/UITextView/**/*.{h,m}'
+    uITextView.public_header_files = 'JWBasicUIKit/Classes/UITextView/**/*.h'
+  end
+  s.subspec 'AlertView' do |alertView|
+    alertView.source_files = 'JWBasicUIKit/Classes/AlertView/**/*.{h,m}'
+    alertView.public_header_files = 'JWBasicUIKit/Classes/AlertView/**/*.h'
+    alertView.dependency 'JWBasicUIKit/UIImage'
+    alertView.dependency 'JWBasicUIKit/UIColor'
+    alertView.dependency 'JWBasicUIKit/UIFont'
+  end
+
+  s.public_header_files = 'JWBasicUIKit/Classes/JWBasicUIKit.h'
+  s.source_files = 'JWBasicUIKit/Classes/JWBasicUIKit.h'
+  
+  s.dependency 'SDWebImage'
+  s.dependency 'Masonry'
 end

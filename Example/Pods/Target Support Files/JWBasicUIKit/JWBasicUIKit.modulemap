@@ -1,0 +1,6 @@
+framework module JWBasicUIKit {
+  umbrella header "JWBasicUIKit-umbrella.h"
+
+  export *
+  module * { export * }
+}
