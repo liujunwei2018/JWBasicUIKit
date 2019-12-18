@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '8.0'
+
+target 'JWBasicUIKit_Example' do
+  pod 'JWBasicUIKit', :path => '../'
+
+  target 'JWBasicUIKit_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
