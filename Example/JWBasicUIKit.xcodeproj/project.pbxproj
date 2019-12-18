@@ -37,7 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1EB7C9CEAB8B3B417D53F5B9 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		1EB7C9CEAB8B3B417D53F5B9 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		494ACE42FA3BDC44118991FF /* Pods-JWBasicUIKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JWBasicUIKit_Tests.release.xcconfig"; path = "Target Support Files/Pods-JWBasicUIKit_Tests/Pods-JWBasicUIKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		54A71D5971771E181AA62BD8 /* Pods_JWBasicUIKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JWBasicUIKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58A195388D20070C39A /* JWBasicUIKit_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JWBasicUIKit_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -62,8 +62,8 @@
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		94881B2C501E32FE41B1AB22 /* Pods-JWBasicUIKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JWBasicUIKit_Example.debug.xcconfig"; path = "Target Support Files/Pods-JWBasicUIKit_Example/Pods-JWBasicUIKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		A41D19608A7DBC6461906F6D /* JWBasicUIKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = JWBasicUIKit.podspec; path = ../JWBasicUIKit.podspec; sourceTree = "<group>"; };
-		BB8D8232648E8FCCCF177B86 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		A41D19608A7DBC6461906F6D /* JWBasicUIKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = JWBasicUIKit.podspec; path = ../JWBasicUIKit.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BB8D8232648E8FCCCF177B86 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		DAB8F058F3B81947AAC96E9C /* Pods-JWBasicUIKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JWBasicUIKit_Example.release.xcconfig"; path = "Target Support Files/Pods-JWBasicUIKit_Example/Pods-JWBasicUIKit_Example.release.xcconfig"; sourceTree = "<group>"; };
 		E255B5F7C6362A683CEC915F /* Pods-JWBasicUIKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JWBasicUIKit_Tests.debug.xcconfig"; path = "Target Support Files/Pods-JWBasicUIKit_Tests/Pods-JWBasicUIKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		E7BAAA8C5B68060C9CD20AE8 /* Pods_JWBasicUIKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JWBasicUIKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -193,7 +193,6 @@
 				E255B5F7C6362A683CEC915F /* Pods-JWBasicUIKit_Tests.debug.xcconfig */,
 				494ACE42FA3BDC44118991FF /* Pods-JWBasicUIKit_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -258,6 +257,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
