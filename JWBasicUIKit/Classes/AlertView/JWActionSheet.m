@@ -12,9 +12,17 @@
 #import "UIColor+JW.h"
 #import "UIFont+JW.h"
 
+#define kJWActionSheetSafeBottomHeight \
+({ \
+    CGFloat bottom = 0.f; \
+    if(@available(iOS 11.0, *)) { \
+        bottom = [UIApplication sharedApplication].keyWindow.safeAreaInsets.bottom; \
+    } \
+    (bottom); \
+})
 #define kSCREENWIDTH (float)([UIScreen mainScreen].bounds.size.width)
 #define kSCREENHEIGHT (float)([UIScreen mainScreen].bounds.size.height)
-#define SHEETBOTTOM ((kSCREENHEIGHT- 812) ? 8.5f : (8.5f+34.f))
+#define SHEETBOTTOM (8.5f+kJWActionSheetSafeBottomHeight)
 
 static CGFloat const SHEETHEIGHT = 57.f;
 
