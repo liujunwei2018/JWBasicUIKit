@@ -8,7 +8,7 @@
 
 #import "UIImage+JW.h"
 #import <Accelerate/Accelerate.h>
-#import "UIImage+GIF.h"
+#import <SDWebImage/UIImage+GIF.h>
 
 @implementation UIImage (JW)
 
